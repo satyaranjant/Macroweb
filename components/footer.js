@@ -1,0 +1,148 @@
+class Footer extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
+      this.innerHTML = `
+          <style>
+            nav {
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color:  #0a0a23;
+            }
+    
+            ul {
+              padding: 0;
+            }
+            
+            a {
+              font-weight: 700;
+              margin: 0 25px;
+              color: #fff;
+              text-decoration: none;
+            }
+            
+            a:hover {
+              padding-bottom: 5px;
+              box-shadow: inset 0 -2px 0 0 #fff;
+            }
+          </style>
+          <footer>
+          <section id="footer">
+          <div class="container13 text-center text-md-start mt-5">
+    
+    
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <div class="column">
+                  <img src="/img/macroweb.gif" alt="macroweb" class="macroweb" />
+                  <img src="img/shaping.jpg" alt="" width="160" height="80" />
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="column">
+                  <h6>RECENT NEWS</h6>
+                  <a href="index.html">HOME</a>
+                  <a href="about.html">ABOUT Us</a>
+                  <a href="services.html">SERVICES</a>
+                  <a href="event.html">EVENT</a>
+                  <button type="button" class="modal-contact" data-toggle="modal" data-target="#exampleModalLong">
+                    CONTACT
+                  </button>
+    
+                  <div class="modal" style="z-index:40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="contact-container">
+                            <h1>Contact Us</h1>
+                            <div class="contact-form">
+                              <label for="name">Name*</label>
+                              <input type="text" class="form-control" id="name" name="name" placeholder="" />
+                              <i class="fa fa-user form-control-feedback"></i>
+                            </div>
+                            <div class="contact-form">
+                              <label for="email">Email*</label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="" />
+                              <i class="fa fa-envelope form-control-feedback"></i>
+                            </div>
+                            <div class="contact-form">
+                              <label for="subject">Subject*</label>
+                              <input type="text" class="form-control" id="subject" name="subject" placeholder="" />
+                              <i class="fa fa-navicon form-control-feedback"></i>
+                            </div>
+                            <div class="contact-form">
+                              <label for="message">Message*</label>
+                              <textarea class="form-control" rows="6" id="message" name="message" placeholder=""></textarea>
+                              <i class="fa fa-pencil form-control-feedback"></i>
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-default" />
+                            </form>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+    
+    
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="column">
+                  <h6>DOWNLOADS</h6>
+                  <a href="http://macroweb.in/public/assets/download/Admission_Form.pdf">Admission Form</a>
+                  <a href="http://macroweb.in/public/assets/download/e_mudhra.pdf">E-Mudhra DSC Form</a>
+                  <a href="http://macroweb.in/public/assets/download/Sify_DSC_Form.pdf">Sify DSC Form</a>
+                  <a href="http://macroweb.in/public/assets/download/validation_form.pdf">Validation Form</a>
+                </div>
+              </div>
+    
+    
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="column">
+                  <h6>ABOUT US</h6>
+                  <p>
+                    Since inception in 1995 Macroweb Technology has grown into an
+                    innovative, unique and industry relevant training and Service
+                    Provider in IT, Telecom, Electronics and allied Vocational Sector.
+                    Last decade has seen many changes so-called Micro-revolutionary in
+                    various spheres.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+    
+    
+          <footer class="container14">
+            <p>
+              Copyright &copy; 2015-2023: Macroweb Technology-All Rights are
+              Reserved
+            </p>
+          </footer>
+    
+        </section>
+          </footer>
+        `;
+    }
+  }
+  
+  customElements.define("footer-component", Footer);
+  
