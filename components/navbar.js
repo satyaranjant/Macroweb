@@ -72,7 +72,7 @@ class Navbar extends HTMLElement {
 
 
           <div class="container-fluid ml-lg-5">
-          <a class="navbar-brand" href="/"><img src="./img/macroweb.gif" class="macroweb"></a>
+          <a class="navbar-brand" href="/"><img src="../img/macroweb.gif" class="macroweb"></a>
 
 
 
