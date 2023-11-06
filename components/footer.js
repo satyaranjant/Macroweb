@@ -38,7 +38,7 @@ class Footer extends HTMLElement {
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <div class="column">
-                  <img src="/img/macroweb.gif" alt="macroweb" class="macroweb" />
+                  <img src="./img/macroweb.gif" alt="macroweb" class="macroweb" />
                   <img src="img/shaping.jpg" alt="" width="160" height="80" />
                 </div>
               </div>
