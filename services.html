@@ -46,93 +46,13 @@
 
 <body>
   <div id="wrapper" class="home-page">
-    <!-- start header -->
-    <header class="container">
-      <div class="call">
-        <p>
-          <img src="./img/call-removebg-preview.png" class="img1" />06784|241990|241991
-        </p>
-      </div>
-      <div class="email">
-        <p>
-          <img src="./img/email-removebg-preview.png" class="img1" />admin@macroweb.in
-        </p>
-      </div>
-      <div class="social-media">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/MacrowebTechnology2016/?ref=aymt_homepage_panel"><img
-                src="./img/facebook-removebg-preview.png" class="fb" /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FMacroweb2">
-              <img src="./img/tweet-removebg-preview.png" class="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/embed/eye43XMl9WQ?autoplay=1&mute=1">
-              <img src="./img/youtube-removebg-preview.png" class="yt" />
-            </a>
-          </li>
-          <li>
-            <a href="https://mail.google.com/mail/">
-              <img src="./img/gmail-removebg-preview.png" class="gmail" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/">
-              <img src="./img/google-removebg-preview.png" class="google" />
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/macroweb_technology?igshid=OGQ5ZDc2ODk2ZA==">
-              <img src="./img/insta-removebg-preview.png" class="instagram" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- end header -->
+      <!-- start header -->
+      <header-component></header-component>
+      <!-- end header-->
 
-
-
-
-    <!--navbar-->
-
-    <nav class="navbar navbar-expand-lg bg-#f68b1f overflow-y-hidden">
-      <div class="container-fluid ml-lg-5">
-        <a class="navbar-brand" href="#"><img src="./img/macroweb.gif" class="macroweb"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-9 mb-lg-0 ml-lg-auto d-flex">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="services.html">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="event.html">EVENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="download.html">DOWNLOAD</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://admin.macroweb.in/">LOGIN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-    <!--end navbar-->
+      <!--navbar-->
+      <navbar-component></navbar-component>
+      <!--end navbar-->
 
 
     <div class="container2">
@@ -185,116 +105,9 @@
 
 
 
-     <!--footer-->
-    <section id="footer">
-      <div class="container13 text-center text-md-start mt-5">
-
-
-        <div class="row mt-3">
-         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <div class="column">
-            <img src="./img/macroweb.gif" alt="macroweb" class="macroweb" />
-            <img src="img/shaping.jpg" alt="" width="160" height="80" />
-          </div>
-         </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <div class="column">
-              <h6>RECENT NEWS</h6>
-              <a href="index.html">HOME</a>
-              <a href="about.html">ABOUT Us</a>
-              <a href="services.html">SERVICES</a>
-              <a href="event.html">EVENT</a>
-              <button type="button" class="modal-contact" data-toggle="modal" data-target="#exampleModalLong">
-                CONTACT
-              </button>
-          
-              <div class="modal" style="z-index:40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="contact-container">
-                        <h1>Contact Us</h1>
-                        <div class="contact-form">
-                          <label for="name">Name*</label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="" />
-                          <i class="fa fa-user form-control-feedback"></i>
-                        </div>
-                        <div class="contact-form">
-                          <label for="email">Email*</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="" />
-                          <i class="fa fa-envelope form-control-feedback"></i>
-                        </div>
-                        <div class="contact-form">
-                          <label for="subject">Subject*</label>
-                          <input type="text" class="form-control" id="subject" name="subject" placeholder="" />
-                          <i class="fa fa-navicon form-control-feedback"></i>
-                        </div>
-                        <div class="contact-form">
-                          <label for="message">Message*</label>
-                          <textarea class="form-control" rows="6" id="message" name="message" placeholder=""></textarea>
-                          <i class="fa fa-pencil form-control-feedback"></i>
-                        </div>
-                        <input type="submit" value="Submit" class="btn btn-default" />
-                        </form>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-  
-  
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <div class="column">
-              <h6>DOWNLOADS</h6>
-              <a href="http://macroweb.in/public/assets/download/Admission_Form.pdf">Admission Form</a>
-              <a href="http://macroweb.in/public/assets/download/e_mudhra.pdf">E-Mudhra DSC Form</a>
-              <a href="http://macroweb.in/public/assets/download/Sify_DSC_Form.pdf">Sify DSC Form</a>
-              <a href="http://macroweb.in/public/assets/download/validation_form.pdf">Validation Form</a>
-            </div>
-          </div>
-  
-  
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <div class="column">
-              <h6>ABOUT US</h6>
-              <p>
-                Since inception in 1995 Macroweb Technology has grown into an
-                innovative, unique and industry relevant training and Service
-                Provider in IT, Telecom, Electronics and allied Vocational Sector.
-                Last decade has seen many changes so-called Micro-revolutionary in
-                various spheres.
-              </p>
-            </div>
-          </div>
-        </div> 
-
-
-      </div>
-  
-  
-      <footer class="container14">
-        <p>
-          Copyright &copy; 2015-2023: Macroweb Technology-All Rights are
-          Reserved
-        </p>
-      </footer>
-  
-    </section>
-    <!--end of footer-->
+      <!--footer-->
+      <footer-component></footer-component>
+      <!--end of footer-->
   </div>
 </body>
 
