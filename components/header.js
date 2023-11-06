@@ -37,7 +37,7 @@ class Header extends HTMLElement {
           <div class="d-flex">
             <!-- Brand -->
             <p class="text-black font-weight-bold ml-4 mt-3">
-              <img src="../img/call-removebg-preview.png" class="img1" />06784|241990|241991
+              <img src="https://cdn4.iconfinder.com/data/icons/ui-beast-4/32/Ui-14-512.png" class="img1" />06784|241990|241991
             </p>
           </div>
           <!-- Left elements -->
